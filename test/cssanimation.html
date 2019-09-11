@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>cssAnimation</title>
+        <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+
+    </head>
+    <body>
+    <section>
+        <h1>これが題名</h1>
+        <h2>ここが見出し</h2>
+        <p>テキスト</p>
+    </section>
+    <section>
+        <div class="hidden_box">
+            <label for="label1">クリックして表示</label>
+            <input type="checkbox" id="label1"/>
+            <div class="hidden_show">
+                <div class="popupSearch">
+                    <div class="popupSearch__topSection">
+                        <p class="subTitle">フリーワード検索</p>
+                        <form method="get" action="#" class="search_container">
+                            <input type="text" size="100" placeholder="">
+                            <input type="submit" value="&#xf002">
+                        </form>
+                    </div>
+                    <div class="popupSearch__underSection">
+                        <p class="subTitle">タグ検索</p>
+                        <ul class="tabList">
+                            <li class="tabList__clum">注目キーワード</li>
+                            <li class="tabList__clum">業種</li>
+                            <li class="tabList__clum">目的・課題</li>
+                            <li class="tabList__clum">専門家</li>
+                            <li class="tabList__clum">国・地域</li>
+                        </ul>
+                        <ul class="keywordList">
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">AI</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ダイバーシティ</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">IoT</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">クラウド</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">イノベーション</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ブロックチェーン</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">デジタルマーケティング</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">働き方改革</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">グローバル</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ビジネスIT</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">Fintech</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ビッグデータ</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">シェアリングエコノミー</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">富裕層</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">サイバーセキュリティ</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">オープンイノベーション</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">データアナリティクス</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">CSV/CSR</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">UX/UIデザイン</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">政策提言</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">地方創生</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">時事解説</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">マイナンバー</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">RPA</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">コーポレートIT</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">経営</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">宇宙ビジネス</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">DX</a></li>
+                        </ul>
+                        <ul class="keywordList">
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">水産・農林</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">住宅・建設・不動産</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">食料品</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">化学・素材</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ヘルスケア・医療</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">社会保障</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">機械、機器</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">エネルギー・環境</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">運輸・物流・倉庫</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">情報・通信</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">メディア・出版</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">消費財・流通</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">サービス</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">証券</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">資産運用会社</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">生保・損保</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">銀行・信託銀行</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">その他金融</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">公共</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">電機・ハイテク</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">自動車</a></li>
+                        </ul>
+                        <ul class="keywordList">
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">リアルタイム経営</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">グローバルオペレーション</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ビジネスモデル変革</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">コーポレートガバナンス</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ミッション・ビジョン・バリュー構築</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">事業構造改革</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">HRM戦略策定</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">コスト構造改革</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">M&A・PMI</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">PMO・プロマネ強化</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">業務プロセス改善</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">営業・チャネル改革</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">マーケティング戦略策定</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">顧客関係強化</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">サプライチェーン最適化</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ビジネスプラットフォーム</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">規制・制度対応</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">法制度設計支援</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">IT投資最適化</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">BCP・リスク管理強化</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">情報セキュリティ確保</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">働き方改革</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">データアナリティクス</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ITガバナンス強化</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">IT部門構造改革</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">情報戦略策定</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">経営情報可視化・活用</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">業務・システム統合</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ITの高度活用</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">データセンター移転</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">IT人材強化</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">情報子会社成長</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">保全業務改革</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">デジタルワークプレイス</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">RPA</a></li>
+                        </ul>
+                        <ul class="keywordList">
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">村田 佳生</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">中島 久雄</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">桑津 浩太郎</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">青嶋 稔</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">太田 一郎</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">小野 尚</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">倉林 貴之</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">近野 泰</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">馬場 功一</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">三﨑 冨査雄</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">宮本 弘之</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">松本 哲</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">木内 登英</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">大崎 貞和</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">井上 哲也</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">神宮 健</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">城田 真琴</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">古明地 正俊</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">崎村 夏彦</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">長谷 佳明</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">田中 達雄</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">亀津 敦</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">藤野 直明</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">北 俊一</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">藤吉 栄二</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">鷺森 崇</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">幸田 敏宏</a></li>
+                        </ul>
+                        <ul class="keywordList">
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">グローバル</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">アジア太平洋諸国</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">北米</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">欧州</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">アフリカ</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">中東</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">日本</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">中国</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">香港</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">台湾</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">韓国</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">インド</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">オーストラリア</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">タイ</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">フィリピン</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">インドネシア</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">シンガポール</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">アメリカ</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ロシア</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ベトナム</a></li>
+                            <li class="keywordList__clum"><a class="keywordList__link" href="">ドイツ</a></li>
+                        </ul>
+                        なんだがタグっぽいのがいっぱい
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    </body>
+</html>
