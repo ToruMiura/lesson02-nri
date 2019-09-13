@@ -131,14 +131,15 @@ https://cotodama.co/search-box/
     display: inline-block;
     border: gray solid 1px;
     border-radius: 8px;
-    padding:8px 10px;
     font-size: 14px;
-    margin: 2px;
+    margin: 4px;
+    padding:8px 10px;
 }
 
 .keywordList__link {
     text-decoration: none;
     color: #333;
     font-family: 'Noto Sans JP', sans-serif;
+    width: 100%;
 
 }

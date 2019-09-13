@@ -552,5 +552,46 @@ CSSを書く時のルール
 }
 
 
+/*
+https://blog.niketcha.com/website-css-display-switch-box/
+*/
 
+/*ボックス全体*/
+.switchbox {
+    margin: 10px 0;
+    padding: 0;
+    display: flex;
+}
+/*ラベル*/
+.switchbox label {
+    display: block;
+    font-weight: bold;
+    cursor :pointer;
+}
+/*チェックボックスを非表示にする*/
+.switchbox input {
+    display: none; 
+}
+/*中身を非表示にしておく*/
+.switchbox div {
+    height: 0;
+    overflow-y: hidden;
+    transition: 0.8s;/*ゆっくり表示させる*/
+    opacity: 0;
+}
+/*クリックで中身を表示*/
+.switchbox input:checked + label + div {
+    height: auto;
+    opacity: 1;
+}
+/*アイコン*/
+.switchbox label::before {
+    content: '\f002';
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 8px;
+}
+/*クリックでアイコン入れ替え*/
+.switchbox input:checked + label::before {
+    content: '\f068';
+}
 

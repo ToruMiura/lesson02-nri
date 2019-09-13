@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="./common/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="./common/css/style.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
     </head>
     <body>
         <section>
@@ -15,15 +17,28 @@
                     <img class="globalHeader__corpIcon" src="images/NRI-apple-touch-icon.png" alt="corpicon">
                 </div>
                 <div class="globalHeader__right">
+                    <!--https://blog.niketcha.com/website-css-display-switch-box/-->
                     <div class="globalHeader__icon">
-                        検索
-                    </div>
-                    <div class="globalHeader__icon">
-                        言語
-                    </div>
-                    <div class="globalHeader__icon">
-                        サイトマップ
-                    </div>
+                        <div class="switchbox">
+                            <!--ここから-->
+                            <input type="checkbox" id="label1" />
+                            <label for="label1"><i class="fas fa-search"></i></label>
+                            <div>
+                                <p>検索</p>
+                            </div><!--//ラベル1ここまで-->
+                            <!--ここから-->
+                            <input type="checkbox" id="label2" />
+                            <label for="label2">言語</label>
+                            <div>
+                                <p>非表示にするコンテンツ</p>
+                            </div><!--//ラベル2ここまで-->
+                            <input type="checkbox" id="label3" />
+                            <label for="label3">サイトマップ</label>
+                            <div>
+                                <p>非表示にするコンテンツ</p>
+                            </div><!--//ラベル3ここまで-->
+                        </div>
+                    </div><!--//switchbox-->
                 </div>
             </div>
             <nav class="pkzList">
